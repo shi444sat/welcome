@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#container {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+#hello-text {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.75s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.75s forwards;
+}
