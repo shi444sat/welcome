@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const helloText = document.getElementById("hello-text");
-    const languages = ["Hello", "Bonjour", "Hola", "こんにちは", "안녕하세요", "Ciao"];
+    const languages = ["Hello", "Namaste", "Hola", "Bonjour", "Ciao", ];
     let index = 0;
 
     // Function to change the text and handle animations
