@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const helloText = document.getElementById("hello-text");
-    const languages = ["Hello", "Namaste", "Hola", "Bonjour", "Ciao", ];
+    const languages = ["Loading...", "Hello", "Namaste", "Hola", "Bonjour", ];
     let index = 0;
 
     // Function to change the text and handle animations
